@@ -41,5 +41,5 @@ const styles = StyleSheet.create({
   },
 });
 // register two activity
-AppRegistry.registerComponent('ThirdActivity', () => App, false);
-AppRegistry.registerComponent('AnotherActivity', () => HelloWorld, false);
+AppRegistry.registerComponent('FirstNav', () => App, false);
+AppRegistry.registerComponent('HelloWorld', () => HelloWorld, false);

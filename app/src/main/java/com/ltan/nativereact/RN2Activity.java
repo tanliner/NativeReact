@@ -17,6 +17,6 @@ public class RN2Activity extends ReactActivity {
     @Nullable
     @Override
     protected String getMainComponentName() {
-        return "AnotherActivity";
+        return "HelloWorld";
     }
 }

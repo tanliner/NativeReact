@@ -9,6 +9,6 @@ public class RNActivity extends ReactActivity {
     @Nullable
     @Override
     protected String getMainComponentName() {
-        return "ThirdActivity";//这个在Registry.registerComponent注册
+        return "FirstNav";//这个在Registry.registerComponent注册
     }
 }
