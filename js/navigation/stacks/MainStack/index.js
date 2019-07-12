@@ -19,6 +19,7 @@ const MainStack = createStackNavigator(
     headerMode: 'none',
     transitionConfig,
     navigationOptions: gestureConfig,
+    screenProps: { name: '' },
   }
 );
 

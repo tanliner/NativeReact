@@ -9,7 +9,7 @@ import styles from './style'
 export default class FirstPage extends Component {
 
     static propTypes = {
-        bundle: PropTypes.string.isRequired
+        screenProps: PropTypes.object.isRequired
     };
 
 
@@ -18,7 +18,7 @@ export default class FirstPage extends Component {
     }
 
     componentDidMount() {
-        console.log('ltan/FirstPage args', this.props.bundle)
+        console.log('ltan/FirstPage args', this.props.screenProps)
     }
 
     onPress = () => {
