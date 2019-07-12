@@ -7,8 +7,18 @@ import Navigator from '../../NavigationService';
 import styles from './style'
 
 export default class FirstPage extends Component {
+
+    static propTypes = {
+        bundle: PropTypes.string.isRequired
+    };
+
+
     constructor(props) {
         super(props);
+    }
+
+    componentDidMount() {
+        console.log('ltan/FirstPage args', this.props.bundle)
     }
 
     onPress = () => {

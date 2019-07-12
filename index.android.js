@@ -14,7 +14,8 @@ class HelloWorld extends React.Component {
 
   // 测试跨Activity启动界面，结果 Failed
   goAnotherPage = () => {
-    Navigator.navigate('Main')
+    console.log('ltan/ddd goAnotherPage');
+//    Navigator.navigate('Main')
   };
 
   render() {
