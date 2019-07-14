@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, ScrollView, TouchableOpacity, Image, TouchableWithoutFeedback, Modal} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
 
 import styles from './style'
@@ -12,7 +12,7 @@ export default class SecPage extends Component {
 
     onPress = () => {
         console.log('ltan/SecPage');
-        Navigator.navigate('Main')
+        Navigator.navigate('FirstPage')
     };
 
     render() {

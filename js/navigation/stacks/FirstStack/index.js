@@ -4,41 +4,44 @@ import { createStackNavigator } from 'react-navigation';
 import transitionConfig from '../../transitionConfig';
 import { gestureConfig } from '../../gestureConfig';
 import navigationOptions from '../../navigationOptions';
+
 import TabBarLabel from '../../../components/TabBarLabel';
 import TabBarIcon from '../../../components/TabBarIcon';
 import { ICONS } from '../../../assets/images';
 
-import Market from '../../../screens/SecPage';
+import FirstPage from '../../../screens/FirstPage';
 
-
-const MarketStack = createStackNavigator(
+const FirstStack = createStackNavigator(
   {
-    Market,
+    FirstPage,
   },
   {
     headerMode: 'none',
     transitionConfig,
     navigationOptions: gestureConfig,
+    screenProps: { name: '' },
   }
 );
 
-const MarketTabBarIcon = ({ focused }) => (
+const MainTabBarIcon = ({ focused }) => (
   <TabBarIcon
+    showRedDot={true}
     focused={focused}
-    defaultSource={ICONS.NAV_MARKET}
-    activeSource={ICONS.NAV_MARKET_SELECTED}
+    defaultSource={ICONS.NAV_MAIN}
+    activeSource={ICONS.NAV_MAIN_SELECTED}
+    style={{ marginRight: 2 }}
   />
 );
 
-MarketTabBarIcon.propTypes = {
+MainTabBarIcon.propTypes = {
   focused: PropTypes.bool.isRequired,
 };
 
-MarketStack.navigationOptions = ({ navigation }) => navigationOptions(
-  'MARKET',
+FirstStack.navigationOptions = ({ navigation }) => navigationOptions(
+  'FirstPage',
   navigation,
   TabBarLabel,
-  MarketTabBarIcon,
+  MainTabBarIcon,
   () => {
     if (!navigation.isFocused()) {
     }
@@ -46,4 +49,4 @@ MarketStack.navigationOptions = ({ navigation }) => navigationOptions(
   }
 );
 
-export default MarketStack;
+export default FirstStack;

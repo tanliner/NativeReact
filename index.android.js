@@ -12,10 +12,9 @@ import App from './js';
 
 class HelloWorld extends React.Component {
 
-  // 测试跨Activity启动界面，结果 Failed
   goAnotherPage = () => {
     console.log('ltan/ddd goAnotherPage');
-//    Navigator.navigate('Main')
+    // Navigator.navigate('Main') // failed
   };
 
   render() {
@@ -42,5 +41,5 @@ const styles = StyleSheet.create({
   },
 });
 // register two activity
-AppRegistry.registerComponent('FirstNav', () => App, false);
-AppRegistry.registerComponent('HelloWorld', () => HelloWorld, false);
+AppRegistry.registerComponent('RNActivity', () => App, false);
+AppRegistry.registerComponent('RNBActivity', () => HelloWorld, false);

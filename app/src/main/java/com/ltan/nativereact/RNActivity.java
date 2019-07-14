@@ -22,6 +22,8 @@ public class RNActivity extends ReactActivity {
                         "http://foo.com/bar1.png",
                         "http://foo.com/bar2.png"
                 ));
+                // App.js
+                // const args = this.props.images;
                 initialProperties.putStringArrayList("images", imageList);
                 return initialProperties;
             }
@@ -30,6 +32,7 @@ public class RNActivity extends ReactActivity {
     @Nullable
     @Override
     protected String getMainComponentName() {
-        return "FirstNav";//这个在Registry.registerComponent注册
+        // Registry.registerComponent("RNActivity", () => App, false)
+        return "RNActivity";
     }
 }

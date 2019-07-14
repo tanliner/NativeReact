@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RNActivity"></activity>
-        <activity android:name=".RN2Activity" />
+        <activity android:name=".RNBActivity" />
         <activity android:name=".SecActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

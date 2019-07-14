@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/start_sec_activity"
+        android:id="@+id/start_RNA_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FirstNav"
+        android:text="To RN A activity"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -19,10 +19,10 @@
         app:layout_constraintVertical_bias="0.406" />
 
     <TextView
-        android:id="@+id/start_hello_activity"
+        android:id="@+id/start_RNB_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="To RN B Activity"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

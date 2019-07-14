@@ -1,11 +1,11 @@
 import { createBottomTabNavigator } from 'react-navigation';
-import MainStack from './stacks/MainStack';
-import MarketStack from './stacks/MarketStack';
+import FirstStack from './stacks/FirstStack';
+import SecStack from './stacks/SecStack';
 
 const menus = () => {
   return {
-    MainStack,
-    MarketStack,
+    FirstStack,
+    SecStack,
   };
 };
 

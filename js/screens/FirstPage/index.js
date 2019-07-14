@@ -24,7 +24,7 @@ export default class FirstPage extends Component {
     onPress = () => {
         console.log('ltan/FirstPage');
         // 测试同一个Activity里启动界面，结果：Succeed
-        Navigator.navigate('Market')
+        Navigator.navigate('SecPage')
     };
 
     render() {

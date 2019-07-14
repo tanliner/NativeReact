@@ -18,7 +18,7 @@ export const requiredUserInfo = [
 
 export default createStackNavigator(
   {
-    Main: MainTabNavigator,
+    FirstPage: MainTabNavigator,
   },
   {
     headerMode: 'none',
